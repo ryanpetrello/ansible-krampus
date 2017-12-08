@@ -1,0 +1,34 @@
+$ ansible-playbook -i unreachable.example.org, hello_world.py
+
+PLAY [Hello World Sample] ************************************************
+
+TASK [Gathering Facts] ***************************************************
+fatal: [unreachable.example.org]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname unreachable.example.org: nodename nor servname provided, or not known\r\n", "unreachable": true}
+	to retry, use: --limit @/Users/ryan/dev/krampus/hello_world.retry
+
+PLAY RECAP ***************************************************************
+unreachable.example.org    : ok=0    changed=0    unreachable=1    failed=0
+
+krampus sees you when you're sleeping
+
+                    *
+            *                 *
+           )       (\___/)     (
+        * /(       \ (. .)     )\ *
+          # )      c\   >'    ( #
+           '         )-_/      '
+         \|,    ____| |__    ,|//
+           \ )  (  `  ~   )  ( /
+            #\ / /| . ' .) \ /#
+            | \ / )   , / \ / |
+             \,/ ;;,,;,;   \,/
+              _,#;,;;,;,
+             /,i;;;,,;#,;
+            ((  %;;,;,;;,;
+             ))  ;#;,;%;;,,
+           _//    ;,;; ,#;,
+          /_)     #,;  //
+                 //    \|_
+                 \|_    |#|
+                  |#\    -"
+                   -"
